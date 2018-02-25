@@ -1,6 +1,6 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
-class Facade {
+export default class Facade {
   constructor(name, schema) {
     this.model = mongoose.model(name, schema);
   }
@@ -40,5 +40,3 @@ class Facade {
       .exec();
   }
 }
-
-module.exports = Facade;

@@ -1,5 +1,6 @@
-const controller = require('./controller');
-const Router = require('express').Router;
+import { Router } from 'express';
+import controller from './controller';
+
 const router = new Router();
 
 router.route('/')
@@ -11,4 +12,4 @@ router.route('/:id')
   .get((...args) => controller.findById(...args))
   .delete((...args) => controller.remove(...args));
 
-module.exports = router;
+export default router;

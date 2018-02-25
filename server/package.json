@@ -4,8 +4,8 @@
   "description": "web3-js-snippets",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
-    "start": "node index.js"
+    "dev": "gulp serve",
+    "prod-build": "gulp"
   },
   "engines": {
     "node": ">=6"
@@ -17,14 +17,30 @@
     "express": "^4.14.0",
     "helmet": "^3.1.0",
     "mongoose": "^4.7.0",
-    "morgan": "^1.7.0"
+    "morgan": "^1.7.0",
+    "web3": "^0.20.5"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "del": "^3.0.0",
     "eslint": "^3.11.1",
     "eslint-config-airbnb": "^13.0.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.7.1",
-    "nodemon": "^1.11.0"
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "nodemon": "^1.11.0",
+    "run-sequence": "^2.2.1"
   }
 }

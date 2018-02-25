@@ -1,4 +1,4 @@
-class Controller {
+export default class Controller {
   constructor(facade) {
     this.facade = facade;
   }
@@ -49,5 +49,3 @@ class Controller {
       .catch(err => next(err));
   }
 }
-
-module.exports = Controller;
