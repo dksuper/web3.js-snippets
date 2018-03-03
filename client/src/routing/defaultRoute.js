@@ -11,7 +11,7 @@ const DefaultRoute = ({component: Component, ...rest}) => {
 };
 
 DefaultRoute.propTypes = {
-  component: PropTypes.object.isRequired
+  component: PropTypes.any.isRequired
 };
 
 export default DefaultRoute;

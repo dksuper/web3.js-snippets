@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import { bindActionCreators } from 'redux';
 import PropTypes from 'prop-types';
 import * as exampleActions from '../../redux/actions/exampleActions';
+import {Button} from "antd";
 
 class ExamplePage extends Component {
 
@@ -33,18 +34,14 @@ class ExamplePage extends Component {
     const list = this.props.items.map(item => (<div key={item.id.toString()}>{item.text}</div>));
     return (
       <React.Fragment>
-        <h1>Example of reduxxxxxx</h1>
+        <h1>Example of redux flow</h1>
         <h2>Add item to list</h2>
         <input
           type='text'
           onChange={this.handleChange}
           value={this.state.item.text}
         />
-        <input
-          type='submit'
-          onClick={this.addItem}
-          value='Add Item'
-        />
+        <Button type="primary" onClick={this.addItem}>Add Item</Button>
         <br/>
         <hr/>
         <br/>
