@@ -17,7 +17,6 @@ export const addItem = (item) => {
     // on reject --> dispatch apiCallError
     return Api.saveItem(dispatch, item)
       .then(item => {
-        console.log(item);
         dispatch(addItemSuccess(item));
       }).catch(error => {
         dispatch(apiCallError(error));

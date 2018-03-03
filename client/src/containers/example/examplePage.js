@@ -26,7 +26,7 @@ class ExamplePage extends Component {
 
   addItem = () => {
     this.props.actions.addItem(this.state.item)
-      .then(result => console.log('success', result))
+      .then(() => console.log('success'))
       .catch(error => console.log('error', error));
   };
 
