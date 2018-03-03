@@ -1,5 +1,5 @@
-export const BEGIN_AJAX_CALL = 'BEGIN_AJAX_CALL';
-export const AJAX_CALL_ERROR = 'AJAX_CALL_ERROR';
+export const BEGIN_API_CALL = 'BEGIN_API_CALL';
+export const API_CALL_ERROR = 'API_CALL_ERROR';
 
 export const ADD_ITEM_SUCCESS = 'ADD_ITEM_SUCCESS';
 export const LOAD_ITEMS_SUCCESS = 'LOAD_ITEMS_SUCCESS';

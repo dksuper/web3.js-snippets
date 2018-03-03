@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 
 import items from './exampleReducer';
-import amountCallsInProgress from './ajaxStatusReducer';
+import amountCallsInProgress from './apiStatusReducer';
 
 const rootReducer = combineReducers({
   items,

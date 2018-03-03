@@ -1,8 +1,8 @@
 import delay from './delay';
-import * as loadActions from '../redux/actions/ajaxStatusActions';
+import * as loadActions from '../redux/actions/apiStatusActions';
 
 // This file mocks a web API by working with the hard-coded data below.
-// It uses setTimeout to simulate the delay of an AJAX call.
+// It uses setTimeout to simulate the delay of an API call.
 // All calls return promises.
 const items = [
   {
@@ -30,7 +30,7 @@ const generateId = () => {
 
 class Api {
   static getAllItems(dispatch) {
-    dispatch(loadActions.beginAjaxCall());
+    dispatch(loadActions.beginApiCall());
 
     return new Promise((resolve, reject) => {
       setTimeout(() => {
@@ -40,7 +40,7 @@ class Api {
   }
 
   static saveItem(dispatch, item) {
-    dispatch(loadActions.beginAjaxCall());
+    dispatch(loadActions.beginApiCall());
 
     item = Object.assign({}, item); // to avoid manipulating object passed in.
     return new Promise((resolve, reject) => {

@@ -5,10 +5,10 @@ function actionTypeEndsInSuccess(type){
   return type.substr(type.length - 8) === '_SUCCESS';
 }
 
-export default function ajaxStatusReducer(state = initialState.amountCallsInProgress, action){
-  if(action.type === types.BEGIN_AJAX_CALL){
+export default function apiStatusReducer(state = initialState.amountCallsInProgress, action){
+  if(action.type === types.BEGIN_API_CALL){
     return state + 1;
-  } else if(action.type === types.AJAX_CALL_ERROR || actionTypeEndsInSuccess(action.type)){
+  } else if(action.type === types.API_CALL_ERROR || actionTypeEndsInSuccess(action.type)){
     return state - 1;
   }
 
