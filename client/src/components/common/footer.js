@@ -6,13 +6,9 @@ const { Footer } = Layout;
 const AppFooter = props => {
   return (
     <Footer style={{ textAlign: 'center', paddingBottom: 0 }}>
-      Ant Design ©2016 Created by Ant UED
+      Web3.js Snippets ©2018 Created by Maurice Dalderup
     </Footer>
   );
-};
-
-AppFooter.propTypes = {
-  // None so far
 };
 
 export default AppFooter;
