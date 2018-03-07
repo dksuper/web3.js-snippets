@@ -8,7 +8,7 @@ import {
 import PrivateRoute from './privateRoute';
 
 import HomePage from '../containers/home/homePage'
-import ExamplePage from '../containers/example/examplePage'
+import ExamplePage from '../containers/example/examplePageContainer'
 import PageNotFound from "../containers/pageNotFound";
 import DefaultRoute from "./defaultRoute";
 

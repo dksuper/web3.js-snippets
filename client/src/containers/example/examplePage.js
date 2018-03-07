@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import {connect} from 'react-redux';
-import { bindActionCreators } from 'redux';
-import PropTypes from 'prop-types';
-import * as exampleActions from '../../redux/actions/exampleActions';
 import {Button} from "antd";
+import PropTypes from "prop-types";
+import * as exampleActions from "../../redux/actions/exampleActions";
+import {bindActionCreators} from "redux";
+import {drizzleConnect} from "drizzle-react";
 
-class ExamplePage extends Component {
+export default class ExamplePage extends Component {
 
   constructor(props) {
     super(props);
@@ -31,6 +31,7 @@ class ExamplePage extends Component {
   };
 
   render() {
+    console.log(this.props);
     const list = this.props.items.map(item => (<div key={item.id.toString()}>{item.text}</div>));
     return (
       <React.Fragment>
@@ -50,22 +51,3 @@ class ExamplePage extends Component {
     );
   }
 }
-
-ExamplePage.propTypes = {
-  items: PropTypes.array.isRequired,
-  actions: PropTypes.object.isRequired
-};
-
-function mapStateToProps(state, ownProps) {
-  return {
-    items: state.items
-  }
-}
-
-function mapDispatchToProps(dispatch) {
-  return {
-    actions: bindActionCreators(exampleActions, dispatch)
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(ExamplePage);
