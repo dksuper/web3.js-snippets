@@ -31,12 +31,6 @@ Contributions, questions and comments are all welcome and encouraged. For code c
 This project is licensed under the [MIT License](https://github.com/dalderupmaurice/web3.js-snippets/blob/master/LICENSE)
 
 
-## Support Development
-If this project saved your valuable time in getting your service up, and you feel like buying me coffee, you can donate to my paypal - [![Support via Paypal](https://img.shields.io/badge/support-paypal-yellowgreen.svg?style=flat-square)](paypal.me/MauriceDalderup)
-
-Your support is greatly appreciated.
-
-
 ## Meta
 
 Maurice Dalderup – [@DalderupMaurice](https://twitter.com/MauriceDalderup) – Maurice_Dalderup@hotmail.com
