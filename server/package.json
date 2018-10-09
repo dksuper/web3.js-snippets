@@ -48,7 +48,7 @@
     "jsonwebtoken": "7.1.9",
     "method-override": "^2.3.5",
     "mongoose": "4.7.4",
-    "morgan": "1.7.0",
+    "morgan": "1.9.1",
     "truffle-contract": "^3.0.3",
     "winston": "2.3.0"
   },
